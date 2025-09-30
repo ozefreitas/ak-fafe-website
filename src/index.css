@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --font-montserrat: "montserrat", "sans-serif";
+}
+
+
+.max-container {
+  @apply max-w-[1440px] mt-0 mb-0 ml-auto mr-auto
+}
+
+.input {
+  @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-500 pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-500 max-sm:rounded-full;
+}
+
+.padding {
+  @apply sm:px-16 px-8 sm:py-32 py-12;
+}
+
+.padding-x {
+  @apply sm:px-16 px-8;
+}
+
+.padding-y {
+  @apply sm:py-32 py-12;
+}
+
+.padding-l {
+  @apply sm:pl-16 pl-8;
+}
+
+.padding-r {
+  @apply sm:pr-16 pr-8;
+}
+
+.padding-t {
+  @apply sm:pt-24 pt-12;
+}
+
+.padding-b {
+  @apply sm:pb-24 pb-12;
+}
+
+.info-text {
+  @apply font-montserrat text-slate-500 text-lg leading-7;
+}
