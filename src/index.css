@@ -61,7 +61,7 @@
 }
 
 .padding-y {
-  @apply lg:py-10 py-30;
+  @apply lg:py-20 py-30;
 }
 
 .padding-y-about-sec {

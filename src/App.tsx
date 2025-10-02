@@ -1,6 +1,7 @@
 import { Nav } from "./components";
 import {
-  Founders,
+  FoundersJose,
+  FoundersSonia,
   About,
   Achievements,
   Footer,
@@ -11,31 +12,29 @@ import {
 } from "./sections";
 import background from "./assets/346.jpg";
 
-import React from "react";
-
 const App = () => {
   return (
-    <main
-      className="relative font-montserrat "
-      style={{ backgroundImage: `url(${background})` }}
-    >
+    <main className="relative font-montserrat">
+      <div
+        className="absolute inset-0 bg-cover bg-center filter blur-sm -z-40"
+        style={{ backgroundImage: `url(${background})` }}
+      />
       <Nav></Nav>
       <section className="padding-x padding-y-about-sec">
         <About></About>
       </section>
       <section>
-        <PositivesRulesKarate type="positives"></PositivesRulesKarate>
-        {/* <PositivesRulesKarate type="rules"></PositivesRulesKarate> */}
+        <PositivesRulesKarate></PositivesRulesKarate>
       </section>
       <section className="padding-x">
         <History></History>
       </section>
-      <section className="padding-x">
-        <Founders></Founders>
+      <section className="padding-y">
+        <FoundersJose></FoundersJose>
       </section>
       <section className="padding-x">Fotos/Albuns</section>
-      <section className="padding-x">
-        <Founders></Founders>
+      <section className="padding-y">
+        <FoundersSonia></FoundersSonia>
       </section>
       <section className="padding-x">
         <Reviews></Reviews>

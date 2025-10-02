@@ -1,5 +1,6 @@
 import { NavOptions } from "../constants";
 import { useEffect } from "react";
+import akfafeLogo from "../assets/images/cropped_circle_image.png";
 
 const Nav = () => {
   useEffect(() => {
@@ -10,24 +11,18 @@ const Nav = () => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         blur?.classList.remove("hidden");
-        header?.classList.add(
-          "bg-white",
-          "shadow-md",
-          "text-white",
-          "mt-5",
-          "xl:px-24"
-        );
+        header?.classList.remove("sm:py-4", "shadow-lg");
+        header?.classList.add("bg-white", "text-white", "mt-5", "shadow-2xl");
         headerLinks?.classList.add("text-white");
       } else {
         blur?.classList.add("hidden");
-        header?.classList.remove(
-          "bg-white",
-          "shadow-md",
-          "text-white",
-          "mt-5",
-          "xl:px-24"
-        );
+        header?.classList.add("sm:py-4", "shadow-2xl");
+        header?.classList.remove("bg-white", "text-white", "mt-5", "shadow-lg");
         headerLinks?.classList.remove("text-white");
+      }
+
+      if (window.scrollY === 0) {
+        header?.classList.remove("shadow-lg");
       }
     };
 
@@ -44,14 +39,14 @@ const Nav = () => {
         id="blur-effetch"
       ></div>
       <header
-        className="sm:p-8 xl:px-18 p-6 fixed z-10 w-full rounded-full duration-350"
+        className="sm:px-8 sm:py-4 xl:px-18 p-2 fixed top-4 z-100 rounded-full duration-350 left-1/2 -translate-x-1/2 w-[95%]"
         id="site-header"
       >
         <nav className="flex items-center justify-between max-sm:px-4">
-          <div className="flex items-center gap-6 hover:scale-112 transition-transform duration-300">
+          <div className="flex items-center gap-6 hover:scale-112 transition-transform duration-1000">
             <a href="/">
               <img
-                src="akfafe.jpeg"
+                src={akfafeLogo}
                 alt="akfafe-logo"
                 width={100}
                 height={100}

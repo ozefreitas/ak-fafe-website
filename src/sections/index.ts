@@ -1,4 +1,5 @@
-import Founders from "./Founders";
+import FoundersJose from "./FoundersJose";
+import FoundersSonia from "./FounderSonia";
 import About from "./About";
 import Achievements from "./Achievements";
 import Footer from "./Footer";
@@ -15,5 +16,6 @@ export {
   Reviews,
   Invite,
   History,
-  Founders,
+  FoundersJose,
+  FoundersSonia,
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const PositivesRulesKarate = (props: { type: string }) => {
+const PositivesRulesKarate = () => {
   const texts = [
     { title: "Respeito", description: "Tudo Bem?" },
     { title: "Condição Física", description: "Tudo Bem?" },
@@ -23,7 +23,9 @@ const PositivesRulesKarate = (props: { type: string }) => {
                 index % 2 === 0 ? "bg-bg-grey-card" : "bg-bg-dark-grey-card"
               }`}
             >
-              <p className="text-2xl font-semibold p-2 text-akfafe-blue">{item.title}</p>
+              <p className="text-2xl font-semibold p-2 text-akfafe-blue">
+                {item.title}
+              </p>
               <p className="p-2">{item.description}</p>
             </div>
           </li>
@@ -40,7 +42,9 @@ const PositivesRulesKarate = (props: { type: string }) => {
                 index % 2 !== 0 ? "bg-bg-grey-card" : "bg-bg-dark-grey-card"
               }`}
             >
-              <p className="text-2xl font-semibold p-2 text-akfafe-blue">{item.title}</p>
+              <p className="text-2xl font-semibold p-2 text-akfafe-blue">
+                {item.title}
+              </p>
               <p className="p-2">{item.description}</p>
             </div>
           </li>

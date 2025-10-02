@@ -5,7 +5,7 @@ const History = () => {
   const history = [
     {
       date: "1978",
-      text: "Constituída em 1978, a AKFAFE é uma organização pioneira das Artes Marciais em Portugal, sendo a associação mais antiga do país.",
+      text: "Constituída em 1978 por José Marinho, a AKFAFE é uma organização pioneira das Artes Marciais em Portugal, sendo a associação mais antiga do país.",
       color: "bg-white",
     },
     {
@@ -27,7 +27,7 @@ const History = () => {
 
   return (
     <section className="max-container justify-center items-center flex flex-row max-lg:flex-wrap max-lg:flex-col-reverse">
-      <div className="lg:w-4/5 h-fit pb-1 flex justify-center w-full m-auto max-2xl:ml-0 sm:pr-0 relative flex-col max-lg:px-0 max-lg:pb-0">
+      <div className="lg:w-4/5 pb-1 flex justify-center w-full m-auto max-2xl:ml-0 sm:pr-0 relative flex-col max-lg:px-0 max-lg:pb-0">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-8 max-sm:gap-10 max-sm:px-5">
           {history.map((item, index) => (
             <div
@@ -35,7 +35,9 @@ const History = () => {
               className="hover:scale-112 transition-transform duration-300"
             >
               <div
-                className={`group relative h-100 max-w-full rounded-3xl flex justify-center items-center backdrop-blur-3xl ${item.color}`}
+                className={`group relative h-70 max-w-full rounded-3xl flex justify-center items-center backdrop-blur-3xl ${
+                  item.color
+                } ${item.color === "bg-white" ? "border" : "border-spacing-0.5"}`}
               >
                 <h3
                   className={`font-bold text-5xl transition-opacity duration-500 group-hover:opacity-0 ${
