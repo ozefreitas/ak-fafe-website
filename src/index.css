@@ -2,12 +2,50 @@
 
 @theme {
   --color-mint-500: oklch(0.72 0.11 178);
+  --color-akfafe-blue: #2d558a;
+  --color-akfafe-red: #bf0303;
+  --color-bg-grey-card: #fefefe;
+  --color-bg-dark-grey-card: #f1f1f1;
   --font-montserrat: "montserrat", "sans-serif";
+  --animate-infinite-scroll: infinite-scroll 80s linear infinite;
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+    }
+  }
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
 }
 
+@layer components {
+  .stop_animation {
+    animation-play-state: paused;
+  }
+}
 
 .max-container {
-  @apply max-w-[1440px] mt-0 mb-0 ml-auto mr-auto
+  @apply max-w-[1440px] mt-0 mb-0 ml-auto mr-auto;
 }
 
 .input {
@@ -23,7 +61,11 @@
 }
 
 .padding-y {
-  @apply sm:py-32 py-12;
+  @apply lg:py-10 py-30;
+}
+
+.padding-y-about-sec {
+  @apply lg:pt-10 lg:pb-0 pt-30;
 }
 
 .padding-l {

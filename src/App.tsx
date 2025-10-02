@@ -9,21 +9,23 @@ import {
   PositivesRulesKarate,
   Reviews,
 } from "./sections";
+import background from "./assets/346.jpg";
 
 import React from "react";
 
 const App = () => {
   return (
-    <main className="relative font-montserrat">
+    <main
+      className="relative font-montserrat "
+      style={{ backgroundImage: `url(${background})` }}
+    >
       <Nav></Nav>
-      <section className="padding">
+      <section className="padding-x padding-y-about-sec">
         <About></About>
       </section>
-      <section className="padding-x">
-        <PositivesRulesKarate></PositivesRulesKarate>
-      </section>
-      <section className="padding-x">
-        <PositivesRulesKarate></PositivesRulesKarate>
+      <section>
+        <PositivesRulesKarate type="positives"></PositivesRulesKarate>
+        {/* <PositivesRulesKarate type="rules"></PositivesRulesKarate> */}
       </section>
       <section className="padding-x">
         <History></History>
