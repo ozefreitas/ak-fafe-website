@@ -28,7 +28,7 @@ const History = () => {
   return (
     <section className="max-container justify-center items-center flex flex-row max-lg:flex-wrap max-lg:flex-col-reverse">
       <div className="lg:w-4/5 pb-1 flex justify-center w-full m-auto max-2xl:ml-0 sm:pr-0 relative flex-col max-lg:px-0 max-lg:pb-0">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-8 max-sm:gap-10 max-sm:px-5">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 lg:gap-5 xl:gap-10 gap-8 max-sm:gap-10 max-sm:px-5">
           {history.map((item, index) => (
             <div
               key={index}
@@ -47,7 +47,7 @@ const History = () => {
                   {item.date}
                 </h3>
                 <p
-                  className={`absolute font-semibold text-xl inset-0 flex items-center justify-center p-10 text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100 ${
+                  className={`absolute font-semibold max-xl:text-lg xl:text-xl inset-0 flex items-center justify-center p-10 text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100 ${
                     item.color !== "bg-white" ? "text-white" : null
                   }`}
                 >
@@ -71,6 +71,8 @@ const History = () => {
           label="Passe nas Cartas para saber mais"
           to="#about"
           icon="eye"
+          disableHover
+          disableRoute
         ></Button>
       </div>
     </section>

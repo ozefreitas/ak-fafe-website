@@ -26,6 +26,25 @@
     }
   }
 
+  --animate-image-right: move-right 1s ease-out forwards;
+
+  @keyframes move-right {
+    from {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+    to {
+      transform: translateX(200px);
+      -webkit-transform: translateX(200px);
+      -moz-transform: translateX(200px);
+      -ms-transform: translateX(200px);
+      -o-transform: translateX(200px);
+}
+  }
+
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   @keyframes wiggle {
     0%,
@@ -65,7 +84,7 @@
 }
 
 .padding-y-about-sec {
-  @apply lg:pt-10 lg:pb-0 pt-30;
+  @apply lg:pt-10 lg:pb-0 pt-35;
 }
 
 .padding-l {

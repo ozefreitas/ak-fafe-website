@@ -4,14 +4,22 @@ const Button = (props: {
   label: string;
   to: string;
   icon: string;
+  disableHover?: boolean;
+  disableRoute?: boolean;
   onHover?: any;
   onHoverOut?: any;
+  onClick?: any;
 }) => {
   return (
     <button
       onMouseEnter={props.onHover}
       onMouseLeave={props.onHoverOut}
-      className="bg-akfafe-red border-1 hover:bg-transparent hover:border-akfafe-red hover:text-akfafe-red px-6 p-3 rounded-full text-white font-monts flex leading-none items-center gap-4 justify-center w-fit cursor-pointer hover:scale-110 transition-transform duration-200"
+      onClick={props.onClick}
+      className={`bg-akfafe-red border-1 ${
+        !props.disableHover
+          ? "hover:bg-transparent hover:border-akfafe-red hover:text-akfafe-red hover:scale-110 cursor-pointer"
+          : null
+      } px-6 p-3 rounded-full text-white font-monts flex leading-none items-center gap-4 justify-center w-fit transition-transform duration-200`}
     >
       {props.icon === "eye" ? (
         <svg
@@ -34,7 +42,7 @@ const Button = (props: {
           />
         </svg>
       ) : null}
-      <a href={props.to}>{props.label}</a>
+      {!props.disableRoute ? <a href={props.to}>{props.label}</a> : props.label}
       {props.icon === "front" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"

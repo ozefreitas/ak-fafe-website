@@ -16,7 +16,7 @@ const App = () => {
   return (
     <main className="relative font-montserrat">
       <div
-        className="absolute inset-0 bg-cover bg-center filter blur-sm -z-40"
+        className="absolute inset-0 bg-cover bg-center filter blur-md -z-40"
         style={{ backgroundImage: `url(${background})` }}
       />
       <Nav></Nav>
@@ -32,14 +32,14 @@ const App = () => {
       <section className="padding-y">
         <FoundersJose></FoundersJose>
       </section>
-      <section className="padding-x">Fotos/Albuns</section>
       <section className="padding-y">
         <FoundersSonia></FoundersSonia>
       </section>
+      <section className="padding-x">Fotos/Albuns</section>
       <section className="padding-x">
         <Reviews></Reviews>
       </section>
-      <section className="padding-x">
+      <section className="padding-y">
         <Achievements></Achievements>
       </section>
       <section className="padding-x">

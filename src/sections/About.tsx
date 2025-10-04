@@ -56,7 +56,7 @@ const About = () => {
         <p className="mb-0 pb-0">Mais do que um deporto, um espaço seguro</p>
         <Button label="Sobre Nós" to="#about" icon="front"></Button>
       </div>
-      <div className="lg:w-3/5 h-[860px] pb-1 flex w-full m-auto max-2xl:ml-0 ml-40 sm:pr-0 py-30 relative group flex-col max-lg:px-0 max-lg:pb-0">
+      <div className="lg:w-3/5 h-[860px] pb-1 flex w-full m-auto max-2xl:ml-0 ml-40 sm:pr-0 pt-40 relative group flex-col max-lg:px-0 max-lg:pb-0 z-50">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
