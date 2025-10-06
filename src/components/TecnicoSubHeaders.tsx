@@ -24,7 +24,7 @@ const TecnicoSubHeaders = (props: { active: any; setActive: any }) => {
   return (
     <motion.div
       ref={containerRef}
-      className="fixed left-1/2 text-center -translate-x-1/2 w-[45%] bg-white leading-normal text-lg text-akfafe-blue font-semibold shadow-2xl p-5 lg:w-[35%] lg:rounded-3xl justify-around items-start flex max-lg:flex-col flex-row my-5 z-100 border-l-8 border-akfafe-red"
+      className="fixed left-1/2 text-center -translate-x-1/2 w-[45%] bg-white leading-normal text-lg text-akfafe-blue font-semibold shadow-2xl p-5 lg:w-[35%] lg:rounded-3xl justify-around items-start flex max-lg:flex-col flex-row my-5 z-90 border-l-8 border-akfafe-red"
       initial={{ y: 150, opacity: 0 }} // start hidden (off left)
       exit={{ y: 150, opacity: 0 }} // slide out left
       transition={{ duration: 0.5, ease: "easeOut" }}

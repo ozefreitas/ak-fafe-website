@@ -9,18 +9,52 @@ const Achievements = () => {
       url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
       title: "Campeões Internacionais",
       number: 12,
+      text: (
+        <>
+          <p className="md:text-xl text-xs w-4/6">
+            Sensei Sónia Marinho sagra-se vice-campeã da Europa na Républica
+            Checa em 1997, o primeiro título feminino da história da
+            SKI-Portugal em competições Internacionais.
+          </p>
+          <p className="md:text-xl text-xs w-4/6 mt-4">
+            Ao seu lado, <i>Hirokazu Kanazawa Soke</i>, na entrega do troféu.
+          </p>
+        </>
+      ),
       icon: "",
     },
     {
       url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
       title: "Campeões Nacionais",
       number: 21,
+      text: (
+        <>
+          <p className="md:text-xl text-xs w-4/6">
+            Andreia Rodrigues sai derrotada na final do <i>Grand Champion</i> de
+            Kumite no Campeonato da Europa de 2021 na Holanda.
+          </p>
+          <p className="md:text-xl text-xs w-4/6 mt-4">
+            As lágrimas são de alegria, por ter conseguido a primeira medalha
+            feminina nesta prova, após uma prestação implacável.
+          </p>
+        </>
+      ),
       icon: "",
     },
     {
       url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
       title: "Campeões Regionais",
       number: 30,
+      text: <>
+          <p className="md:text-xl text-xs w-4/6">
+            Andreia Rodrigues sai derrotada na final do <i>Grand Champion</i> de
+            Kumite no Campeonato da Europa de 2021 na Holanda.
+          </p>
+          <p className="md:text-xl text-xs w-4/6 mt-4">
+            As lágrimas são de alegria, por ter conseguido a primeira medalha
+            feminina nesta prova, após uma prestação implacável.
+          </p>
+        </>,
       icon: "",
     },
 
@@ -28,6 +62,7 @@ const Achievements = () => {
       url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
       title: "Total de Medalhas",
       number: 72,
+      text: "",
       icon: "",
     },
   ];
@@ -37,7 +72,7 @@ const Achievements = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`w-full flex max-md:flex-col max-md:place-items-center justify-around py-20
+          className={`w-full flex max-md:flex-col max-md:place-items-center justify-around py-10 px-10
       ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
         >
           {/* Image side */}
@@ -45,16 +80,12 @@ const Achievements = () => {
             {/* Background image */}
             <div
               style={{ backgroundImage: `url(${slide.url})` }}
-              className="w-full md:cursor-pointer md:h-[70vh] h-[50vh] rounded-2xl bg-center bg-cover duration-500 group-hover:shadow-2xl group-hover:brightness-70 transition-all"
+              className="w-full md:cursor-pointer md:h-[70vh] h-[50vh] rounded-2xl bg-center bg-cover duration-700 group-hover:shadow-2xl group-hover:brightness-50 max-md:brightness-50 transition-all hover:scale-95"
             ></div>
 
             {/* Text overlay */}
-            <div className="absolute bottom-0 left-0 w-full p-6 text-white translate-y-10 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 max-md:opacity-100 max-md:translate-y-0">
-              <p className="text-sm mt-2">
-                akjshkdhasiud asdiuasybdiuasond <br />
-                sduhasdibuasbdo shduaibd <br />
-                sbcjish iu
-              </p>
+            <div className="absolute text-center bottom-0 left-0 w-full flex flex-col items-center pb-25 text-white translate-y-15 opacity-0 transition-all duration-700 group-hover:translate-y-0 group-hover:opacity-100 max-md:opacity-100 max-md:translate-y-0">
+              {slide.text}
             </div>
           </div>
 
@@ -68,7 +99,7 @@ const Achievements = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-12"
+                  className="md:size-12 size-7"
                 >
                   <path
                     strokeLinecap="round"
@@ -81,22 +112,23 @@ const Achievements = () => {
                   to={slide.number}
                   separator=","
                   direction="up"
-                  duration={3}
-                  className="count-up-text text-6xl font-bold w-1/2"
+                  duration={2.5}
+                  className="count-up-text md:text-6xl text-3xl font-bold w-1/2"
                 />
               </div>
 
               <div style={{ marginTop: "" }}>
                 <DecryptedText
-                  className="text-2xl"
+                  className="md:text-2xl text-xl"
                   speed={100}
                   sequential
+                  useOriginalCharsOnly
                   text={slide.title}
                   animateOn="view"
                 />
               </div>
 
-              <div className="opacity-100 absolute top-44 translate-y-0 transition-all duration-300 md:opacity-0 md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0">
+              <div className="opacity-100 absolute md:top-[22vh] top-35 translate-y-0 transition-all duration-300 md:opacity-0 md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0">
                 <Button icon="front" label="Saber Mais" to="#achievements" />
               </div>
             </div>

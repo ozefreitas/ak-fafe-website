@@ -39,7 +39,7 @@ const Nav = () => {
   return (
     <>
       <div
-        className="fixed top-0 left-0 backdrop-blur-md w-full h-25 hidden z-10"
+        className="fixed top-0 left-0 backdrop-blur-md w-full h-25 hidden z-100"
         id="blur-effetch"
       ></div>
       <header

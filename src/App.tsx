@@ -9,9 +9,12 @@ import {
   Invite,
   PositivesRulesKarate,
   Reviews,
+  Classes,
+  Trainers,
 } from "./sections";
 import background from "./assets/346.jpg";
 import blueBrushBachground from "./assets/images/border_1.png";
+import redBrushBachground from "./assets/images/border_1_red.png"
 
 const App = () => {
   return (
@@ -36,21 +39,46 @@ const App = () => {
       <section className="padding-y">
         <FoundersSonia></FoundersSonia>
       </section>
-      <section className="padding-x">Fotos/Albuns</section>
-      <section className="padding-x">
-        <Reviews></Reviews>
-      </section>
+      {/* <section className="padding-x padding-y">Fotos/Albuns</section> */}
       <div
-        className="h-[142px]"
+        className="h-[142px] flex justify-center md:text-7xl text-4xl font-bold"
         style={{ backgroundImage: `url(${blueBrushBachground})` }}
-      ></div>
+      >
+        CONQUISTAS
+      </div>
       <section className="bg-akfafe-blue">
         <Achievements></Achievements>
       </section>
-       <div
+      <div
         className="h-[142px] rotate-180"
         style={{ backgroundImage: `url(${blueBrushBachground})` }}
       ></div>
+      <div className="flex justify-center md:text-7xl text-4xl font-bold">
+        AS NOSSAS AULAS
+      </div>
+      <section className="padding-l padding-y">
+        <Classes></Classes>
+      </section>
+      <div
+        className="h-[142px] flex justify-center md:text-7xl text-4xl font-bold"
+        style={{ backgroundImage: `url(${redBrushBachground})` }}
+      ></div>
+      <div className="flex justify-center md:text-xl text-lg pb-10 bg-akfafe-red text-white">
+        TESTEMUNHOS
+      </div>
+      <div className="flex justify-center md:text-4xl text-3xl font-bold bg-akfafe-red text-white text-center">
+        Uma Família Grande, Satisfeita e Unida
+      </div>
+      <div
+        className="h-[142px] rotate-180"
+        style={{ backgroundImage: `url(${redBrushBachground})` }}
+      ></div>
+      <section className="padding-x padding-b">
+        <Reviews></Reviews>
+      </section>
+      <section className="padding-x padding-t">
+        <Trainers></Trainers>
+      </section>
       <section className="padding-x">
         <Invite></Invite>
       </section>

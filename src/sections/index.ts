@@ -7,6 +7,8 @@ import PositivesRulesKarate from "./PositivesRulesKarate";
 import Reviews from "./Reviews";
 import Invite from "./Invite";
 import History from "./History";
+import Trainers from "./Trainers";
+import Classes from "./Classes";
 
 export {
   About,
@@ -18,4 +20,6 @@ export {
   History,
   FoundersJose,
   FoundersSonia,
+  Trainers,
+  Classes,
 };

@@ -63,6 +63,16 @@
   }
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 .max-container {
   @apply max-w-[1440px] mt-0 mb-0 ml-auto mr-auto;
 }
@@ -80,7 +90,7 @@
 }
 
 .padding-y {
-  @apply lg:py-20 py-30;
+  @apply lg:py-20 py-25;
 }
 
 .padding-y-about-sec {
@@ -96,7 +106,7 @@
 }
 
 .padding-t {
-  @apply sm:pt-24 pt-12;
+  @apply sm:pt-16 md:pt-24 pt-12;
 }
 
 .padding-b {

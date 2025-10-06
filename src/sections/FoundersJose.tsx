@@ -38,7 +38,7 @@ const FoundersJose = () => {
 
   return (
     <motion.div
-      className="bg-akfafe-blue shadow-xl p-10 lg:w-[75%] lg:rounded-r-[100px] xl:px-30 justify-around items-center flex max-lg:flex-col flex-row my-5 overflow-hidden"
+      className=" shadow-xl border p-10 lg:w-[75%] lg:rounded-r-[100px] xl:px-30 justify-around items-center flex max-lg:flex-col flex-row my-5 overflow-hidden"
       initial={{ x: "-100%", opacity: 0 }} // start hidden (off left)
       whileInView={{ x: 0, opacity: 1 }} // slide in when visible
       exit={{ x: "100%", opacity: 0 }} // slide out left
@@ -46,13 +46,13 @@ const FoundersJose = () => {
       animate={{ width: width < 1024 ? "100%" : isClicked ? "97%" : "75%" }}
     >
       <div className="flex flex-col max-lg:text-center gap-10 max-lg:p-8 rounded-2xl max-lg:bg-none bg-center bg-cover duration-500 lg:max-w-fit">
-        <p className="text-3xl text-white font-semibold">Mentor</p>
+        <p className="text-3xl font-semibold">Mentor</p>
         <h1 className="sm:text-6xl text-5xl font-bold">
           <span className="text-akfafe-red">
             José <br /> Marinho
           </span>
         </h1>
-        <p className="font-semibold text-white text-lg">
+        <p className="font-semibold text-lg">
           Sensei/Fundador AKFAFE
         </p>
         <div className="max-lg:flex max-lg:justify-center">
@@ -79,7 +79,7 @@ const FoundersJose = () => {
               }
         }
         transition={{ duration: 0.5, ease: "easeIn" }}
-        className={`text-white rounded-lg lg:text-lg xl:text-2xl lg:w-[200px] xl:w-80`}
+        className={`rounded-lg lg:text-lg xl:text-2xl lg:w-[200px] xl:w-80`}
       >
         <p
           className={`text-center max-md:mx-7 max-lg:mx-20 ${
