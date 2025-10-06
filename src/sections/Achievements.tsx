@@ -45,7 +45,8 @@ const Achievements = () => {
       url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
       title: "Campeões Regionais",
       number: 30,
-      text: <>
+      text: (
+        <>
           <p className="md:text-xl text-xs w-4/6">
             Andreia Rodrigues sai derrotada na final do <i>Grand Champion</i> de
             Kumite no Campeonato da Europa de 2021 na Holanda.
@@ -54,7 +55,8 @@ const Achievements = () => {
             As lágrimas são de alegria, por ter conseguido a primeira medalha
             feminina nesta prova, após uma prestação implacável.
           </p>
-        </>,
+        </>
+      ),
       icon: "",
     },
 
@@ -69,6 +71,9 @@ const Achievements = () => {
 
   return (
     <section className="max-container">
+      <div className="h-[142px] flex justify-center md:text-7xl text-4xl font-bold text-white pt-8">
+        CONQUISTAS
+      </div>
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -80,7 +85,7 @@ const Achievements = () => {
             {/* Background image */}
             <div
               style={{ backgroundImage: `url(${slide.url})` }}
-              className="w-full md:cursor-pointer md:h-[70vh] h-[50vh] rounded-2xl bg-center bg-cover duration-700 group-hover:shadow-2xl group-hover:brightness-50 max-md:brightness-50 transition-all hover:scale-95"
+              className="w-full md:cursor-pointer md:h-[60vh] h-[50vh] rounded-2xl bg-center bg-cover duration-700 group-hover:shadow-2xl group-hover:brightness-50 max-md:brightness-50 transition-all hover:scale-95"
             ></div>
 
             {/* Text overlay */}

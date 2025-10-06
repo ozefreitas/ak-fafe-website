@@ -6,6 +6,10 @@
   --color-akfafe-red: #bf0303;
   --color-bg-grey-card: #fefefe;
   --color-bg-dark-grey-card: #f1f1f1;
+  --text-massive: 250px;
+  --text-massive--line-height: 280px;
+  --text-massive--letter-spacing: 0.3rem;
+  --text-massive--font-weight: 500;
   --font-montserrat: "montserrat", "sans-serif";
   --animate-infinite-scroll: infinite-scroll 80s linear infinite;
 
@@ -42,7 +46,7 @@
       -moz-transform: translateX(200px);
       -ms-transform: translateX(200px);
       -o-transform: translateX(200px);
-}
+    }
   }
 
   --animate-wiggle: wiggle 1s ease-in-out infinite;
@@ -70,6 +74,11 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+  .outlined-text {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 4px white;
   }
 }
 

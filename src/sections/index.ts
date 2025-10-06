@@ -9,6 +9,7 @@ import Invite from "./Invite";
 import History from "./History";
 import Trainers from "./Trainers";
 import Classes from "./Classes";
+import SloganPhotos from "./SloganPhotos";
 
 export {
   About,
@@ -22,4 +23,5 @@ export {
   FoundersSonia,
   Trainers,
   Classes,
+  SloganPhotos
 };

@@ -11,10 +11,10 @@ import {
   Reviews,
   Classes,
   Trainers,
+  SloganPhotos,
 } from "./sections";
 import background from "./assets/346.jpg";
-import blueBrushBachground from "./assets/images/border_1.png";
-import redBrushBachground from "./assets/images/border_1_red.png"
+import redBrushBachground from "./assets/images/border_1_red.png";
 
 const App = () => {
   return (
@@ -30,29 +30,12 @@ const App = () => {
       <section>
         <PositivesRulesKarate></PositivesRulesKarate>
       </section>
-      <section className="padding-x">
+      <section className="padding-x padding-b">
         <History></History>
       </section>
-      <section className="padding-t">
-        <FoundersJose></FoundersJose>
+      <section className=" padding-b">
+        <SloganPhotos></SloganPhotos>
       </section>
-      <section className="padding-y">
-        <FoundersSonia></FoundersSonia>
-      </section>
-      {/* <section className="padding-x padding-y">Fotos/Albuns</section> */}
-      <div
-        className="h-[142px] flex justify-center md:text-7xl text-4xl font-bold"
-        style={{ backgroundImage: `url(${blueBrushBachground})` }}
-      >
-        CONQUISTAS
-      </div>
-      <section className="bg-akfafe-blue">
-        <Achievements></Achievements>
-      </section>
-      <div
-        className="h-[142px] rotate-180"
-        style={{ backgroundImage: `url(${blueBrushBachground})` }}
-      ></div>
       <div className="flex justify-center md:text-7xl text-4xl font-bold">
         AS NOSSAS AULAS
       </div>
@@ -78,6 +61,12 @@ const App = () => {
       </section>
       <section className="padding-x padding-t">
         <Trainers></Trainers>
+      </section>
+      <section className="padding-t">
+        <FoundersJose></FoundersJose>
+      </section>
+      <section className="padding-y">
+        <FoundersSonia></FoundersSonia>
       </section>
       <section className="padding-x">
         <Invite></Invite>
