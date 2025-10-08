@@ -68,10 +68,10 @@ const App = () => {
       <section className="padding-y">
         <FoundersSonia></FoundersSonia>
       </section>
-      <section className="padding-x padding-y">
+      <section className="padding-x padding-b">
         <Invite></Invite>
       </section>
-      <section className="padding-x">
+      <section className="">
         <Footer></Footer>
       </section>
     </main>

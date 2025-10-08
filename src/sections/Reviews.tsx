@@ -6,7 +6,7 @@ const Reviews = () => {
       {ReviewsOptions.map((review, index) => (
         <div
           key={index}
-          className="py-10 px-15 bg-bg-grey-card rounded-2xl flex-1 basis-[30%] max-lg:basis-[45%] max-md:basis-full h-fit shadow-2xl overflow-auto"
+          className="py-10 px-15 bg-bg-grey-card rounded-2xl flex-1 basis-[30%] max-lg:basis-[45%] max-md:basis-full h-fit shadow-2xl overflow-auto inset-shadow-sm inset-shadow-akfafe-blue"
         >
           <p className="mb-10">{review.message}</p>
           <h3 className="flex gap-8">
