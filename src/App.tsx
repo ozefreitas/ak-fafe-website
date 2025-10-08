@@ -36,10 +36,10 @@ const App = () => {
       <section className=" padding-b">
         <SloganPhotos></SloganPhotos>
       </section>
-      <div className="flex justify-center md:text-7xl text-4xl font-bold">
+      <div className="flex justify-center md:text-7xl text-4xl font-bold padding-t">
         AS NOSSAS AULAS
       </div>
-      <section className="padding-l padding-y">
+      <section className="padding-l padding-t">
         <Classes></Classes>
       </section>
       <div
@@ -68,7 +68,7 @@ const App = () => {
       <section className="padding-y">
         <FoundersSonia></FoundersSonia>
       </section>
-      <section className="padding-x">
+      <section className="padding-x padding-y">
         <Invite></Invite>
       </section>
       <section className="padding-x">

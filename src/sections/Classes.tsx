@@ -191,7 +191,7 @@ export default function HorizontalSlider() {
         <div className="flex flex-nowrap z-91">
           {classes.map((item: any, index: any) => (
             <div key={index} className="inline-block px-6 snap-start">
-              <div className="group relative xl:w-130 w-100 h-120 overflow-hidden rounded-lg shadow-md bg-white transition-all duration-500 ease-in-out p-10 hover:bg-black">
+              <div className="group relative xl:w-200 w-100 h-120 overflow-hidden rounded-lg shadow-md bg-white transition-all duration-500 ease-in-out p-10 hover:bg-black">
                 {/* Card content */}
                 <div className="relative z-10 transition-all duration-500 ease-in-out">
                   {/* Title */}

@@ -37,9 +37,9 @@ const FoundersSonia = () => {
   }, []);
 
   return (
-    <div className="flex justify-end overflow-hidden">
+    <div className="flex justify-end overflow-hidden pb-10">
       <motion.div
-        className="bg-akfafe-blue shadow-xl p-10 lg:w-[75%] lg:rounded-l-[100px] xl:px-30 justify-around items-center flex max-lg:flex-col flex-row my-5 overflow-hidden"
+        className="border shadow-xl p-10 lg:w-[75%] lg:rounded-l-[100px] xl:px-30 justify-around items-center flex max-lg:flex-col flex-row overflow-hidden backdrop-blur-xl"
         initial={{ x: "100%", opacity: 0 }} // start hidden (off left)
         whileInView={{ x: 0, opacity: 1 }} // slide in when visible
         exit={{ x: "100%", opacity: 0 }} // slide out left
@@ -61,11 +61,11 @@ const FoundersSonia = () => {
                 }
           }
           transition={{ duration: 0.5, ease: "easeIn" }}
-          className={`text-white rounded-lg lg:text-lg xl:text-2xl lg:w-[200px] xl:w-80`}
+          className={`rounded-lg lg:text-lg xl:text-2xl lg:w-[200px] xl:w-80`}
         >
           <p
             className={`text-center max-md:mx-7 max-lg:mx-20 ${
-              width < 1024 ? "h-30" : "h-full"
+              width < 1024 ? "h-40" : "h-full"
             } transition-all duration-200`}
           >
             Nascido a 31 de julho de 1951, na freguesia de Silvares São
@@ -75,13 +75,13 @@ const FoundersSonia = () => {
           </p>
         </motion.div>
         <div className="flex flex-col max-lg:text-center gap-10 max-lg:p-8 rounded-2xl max-lg:bg-none bg-center bg-cover duration-500 lg:max-w-fit">
-          <p className="text-3xl text-white font-semibold">Mentor</p>
+          <p className="text-3xl font-semibold">Mentor</p>
           <h1 className="sm:text-6xl text-5xl font-bold">
             <span className="text-akfafe-red">
               Sónia <br /> Marinho
             </span>
           </h1>
-          <p className="font-semibold text-white text-lg">Sensei AKFAFE</p>
+          <p className="font-semibold text-lg">Sensei AKFAFE</p>
           <div className="max-lg:flex max-lg:justify-center">
             <Button
               label="Saber Mais"
@@ -89,8 +89,6 @@ const FoundersSonia = () => {
               icon="cursor"
               onClick={handleToogleClick}
               disableRoute
-              // onHover={handleHoverActive}
-              // onHoverOut={handleHoverOff}
             ></Button>
           </div>
         </div>

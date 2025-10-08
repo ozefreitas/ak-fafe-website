@@ -38,7 +38,7 @@ const FoundersJose = () => {
 
   return (
     <motion.div
-      className=" shadow-xl border p-10 lg:w-[75%] lg:rounded-r-[100px] xl:px-30 justify-around items-center flex max-lg:flex-col flex-row my-5 overflow-hidden"
+      className="shadow-xl border p-10 lg:w-[75%] lg:rounded-r-[100px] xl:px-30 justify-around items-center flex max-lg:flex-col flex-row my-5 overflow-hidden backdrop-blur-xl"
       initial={{ x: "-100%", opacity: 0 }} // start hidden (off left)
       whileInView={{ x: 0, opacity: 1 }} // slide in when visible
       exit={{ x: "100%", opacity: 0 }} // slide out left
@@ -62,8 +62,6 @@ const FoundersJose = () => {
             icon="cursor"
             onClick={handleToogleClick}
             disableRoute
-            // onHover={handleHoverActive}
-            // onHoverOut={handleHoverOff}
           ></Button>
         </div>
       </div>
@@ -83,7 +81,7 @@ const FoundersJose = () => {
       >
         <p
           className={`text-center max-md:mx-7 max-lg:mx-20 ${
-            width < 1024 ? "h-30" : "h-full"
+            width < 1024 ? "h-45" : "h-full"
           } transition-all duration-200`}
         >
           Nascido a 31 de julho de 1951, na freguesia de Silvares São Martinho,

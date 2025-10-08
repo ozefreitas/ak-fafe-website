@@ -1,51 +1,12 @@
+import { ReviewsOptions } from "../constants";
+
 const Reviews = () => {
-  const reviews = [
-    {
-      name: "Liliana Bento",
-      message:
-        "que coiisa sslafdsnfkuqb  aiwuerybvaiu akesdfna dhf dhfd oa sdpfosiafuodsbn a0sdnfuhhdghfo gdgfa ydasuid asuhduasyfds aiuyhd9oasosadipjadson",
-    },
-    {
-      name: "Liliana Bento",
-      message:
-        "dfsdafkldsjf sfsdfhjsda ufkhads fvasdfkhfvksdj bhgvjhkfdsb vhjksdfhb vksdfh vdfxkv aihfvirudhfgkrd",
-    },
-    {
-      name: "Liliana Bento",
-      message:
-        "sdfl,alkçdsfjknioaes sdfvjsdnuighndsfiv sdfvdfuishvbksdufbhvnlsdfhjlvbfd",
-    },
-    {
-      name: "Liliana Bento",
-      message: "fdgbvsfd ghsdfghn s tgf hjn ghs rtneh trs rgtfhbfgshb",
-    },
-    {
-      name: "Liliana Bento",
-      message:
-        "dfhsgsfgd hdrtshnt rseuhrtmjhdrtyhmn srtu t6jcjdxt nuy6rmsdyhjrt t76uik yjkty ugmcxddjxnfhgm xfgh sjxgrfhsr jtnxgs rgnfsfgbhn dsgfdh st nd xnfghsn ",
-    },
-    {
-      name: "Liliana Bento",
-      message:
-        "sdfghfgsdhn srth nrtsjetyhm drtyuj nvcddsffgfbadr  htrh fgdsgvsdbfd bgfdb dfgb grfhb trg htfyh dtrh ",
-    },
-    {
-      name: "Liliana Bento",
-      message:
-        "fdaskiortrdtiosklgilkndrsb kgf khgshjkfdgbshjkl fdgjdfbjhkjkdfbhvjkfdhvgbijhkufdhjbvgfghdjhbvfdjkhv hbrdsfkiuhgfdfhvjv nbfgb jfghbvu jfdvbjdf kjbhvufg hbjoidfhviukjfdhvjkdshgviksdfhhvbcxvjkvhsdikfkiksdifçsd jfoçsedrkpogfipodºrgikçowesrjgçoiuq+ibd dvcfgi´pd+fqbg iuu+ohj ",
-    },
-    {
-      name: "Liliana Bento",
-      message:
-        "dgf,lkçdxkntgbliorstdgilkrejgbi ldfilkgjfkjhvb dkfjbvdfkjhb vkhjfd vbhiusdfrgh piçuerdhg fiuqverghuifdpbivub iuviurfh viuviudw vipufdbvpy89 eartghuifbvou9aerh g9p+uqehg9+ufrh g09iufrehgoiufdhgvuoifdhg8yw4580tyv25 4809tyg89'547y t25983747t6580493w7 ytvpw84905ygh h9'8e jb8ijbpu9rthb08uy9 th0789uyb2t4bh7'95t3y2hgb '75t3hjbv 3y57uhb 508u3bh 6324utyghh36t5buy' 79yh 6384 hjg4e5'98uy '98«h6j54«80",
-    },
-  ];
   return (
     <section className="flex flex-wrap gap-8 max-sm:gap-10 max-sm:px-5 padding-t">
-      {reviews.map((review, index) => (
+      {ReviewsOptions.map((review, index) => (
         <div
           key={index}
-          className="p-10 bg-bg-grey-card rounded-2xl flex-1 basis-[30%] max-lg:basis-[45%] max-md:basis-full h-fit shadow-2xl overflow-auto"
+          className="py-10 px-15 bg-bg-grey-card rounded-2xl flex-1 basis-[30%] max-lg:basis-[45%] max-md:basis-full h-fit shadow-2xl overflow-auto"
         >
           <p className="mb-10">{review.message}</p>
           <h3 className="flex gap-8">

@@ -103,7 +103,7 @@
 }
 
 .padding-y-about-sec {
-  @apply lg:pt-10 lg:pb-0 pt-35;
+  @apply lg:pt-10 lg:pb-0 pt-45;
 }
 
 .padding-l {
@@ -119,7 +119,7 @@
 }
 
 .padding-b {
-  @apply sm:pb-24 pb-12;
+  @apply sm:pb-24 pb-12 xl:pb-30;
 }
 
 .info-text {
